@@ -1,5 +1,5 @@
 ## Overview
-In this workshop we will work on building a basic Ruby on Rails app that we can run on our laptops using the built-in Rails development webserver. Some of the topic we'll attempt to cover in this workshop are:
+In this workshop we will work on building a basic Ruby on Rails app that we can run on our laptops using the built-in Rails development webserver. Some of the topics we'll attempt to cover in this workshop are:
 
 * managing Ruby Gems using Bundler
 * the Rake automation tool
@@ -12,9 +12,9 @@ In this workshop we will work on building a basic Ruby on Rails app that we can 
 
 
 ## 0. Prerequisites
-The main requirement is that your laptop will need to have Ruby 2.1 installed. However, installing ruby may require several steps, depending on your machine and the state it's in when you begin. It is recommended that you follow the [RailsBridge Installfest](http://installfest.railsbridge.org/installfest/installfest) guidelines ahead of time. You can ignore the parts about Heroku and, though it is recommended that you install and learn the basics of Git, Git is not required. You can stop when you reach the "Create a Rails App" section. 
+The main requirement is that your laptop will need to have Ruby 2.1 installed. However, installing Ruby may require several steps, depending on your machine and the state it's in when you begin. It is recommended that you follow the [RailsBridge Installfest](http://installfest.railsbridge.org/installfest/installfest) guidelines ahead of time. You can ignore the parts about Heroku and, though it is recommended that you install and learn the basics of Git, Git is not required. You can stop when you reach the "Create a Rails App" section. 
 
-You should expect to spend an hour going through the Installfest process. [Email me](brianjhoffman@gmail.com) ahead of time or arrive early if you are having problems working through the installfest process.
+You should expect to spend an hour going through the Installfest process. [Email me](brianjhoffman@gmail.com) ahead of time or arrive early if you are having problems.
 
 ### Required
 * A plain text editor
@@ -118,7 +118,7 @@ Now we'll go ahead and use the CLI to setup a new Rails project:
 
 ### The Rails development server
 
-When you are developing a Rails app, you probably want to see what it looks like. Fortunately, Rails gives you and easy way to do this:
+When you are developing a Rails app, you probably want to see what it looks like. Fortunately, Rails gives you an easy way to do this:
 
 	$ cd myapp
 	$ rails -s
