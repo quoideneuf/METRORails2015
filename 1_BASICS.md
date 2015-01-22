@@ -79,7 +79,7 @@ Open _app/views/home/index.html.erb_ and add this line:
 
 Let's start keeping track of hits to our app, using a model:
 
-	$ rails g model impression
+	$ rails g model impression --migration=false
 	
 Open _app/models/impression.rb_ in your editor and insert the following at line 2:
 
@@ -93,19 +93,13 @@ Open _app/models/impression.rb_ in your editor and insert the following at line 
       @@hits
   	end
 
-The generator created a database migration, and even though we don't need it yet, we need to make Rails think everything is ok. Stop the app by hitting CTRL-C in the terminal where it's running. Then run the following rake task:
-
-	$ rake db:migrate
-
-Restart the app.
-
-Now open you controller (_app/controllers/home_controller.rb_) and modify the body of the `index` method like the following:
+Now open your controller (_app/controllers/home_controller.rb_) and modify the body of the `index` method like the following:
 
 	Impression.hit
 	
 	@data = {:time => Time.now, :hits => Impression.total}
 	
-Finally, update your view with another <p>:
+Finally, update your view with another `<p>`:
 
 	<p>This app has received <%= @data[:hits] %> hits
 	
