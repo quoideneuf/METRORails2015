@@ -35,7 +35,9 @@ Now point your browser to <http://localhost:3000>.
 
 ### Controllers
 
-Unbreak your app by creating a controller. 
+Unbreak your app by creating a controller:
+
+	$ rails g controller home
 
 Visit <http://localhost:3000> to see...your new error.
 
@@ -104,6 +106,8 @@ Finally, update your view with another `<p>`:
 	<p>This app has received <%= @data[:hits] %> hits
 	
 Now reload <http://localhost:3000>. Reload again to get your hit count up. Now you're ready for your first funding round.
+
+See the `ref1` folder in the repository for an example of how your app should look at this point.
 	
 
 
