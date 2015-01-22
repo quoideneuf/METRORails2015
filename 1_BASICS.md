@@ -1,6 +1,6 @@
 ## Rails Basics
 
-###  1. Basic Rake
+###  Basic Rake
 
 See the Rake tasks that come with Rails:
 
@@ -23,7 +23,7 @@ Now save the file and run the task and be said hello to:
 
 	$ rake metro:hello
 
-### 2. Rails Routing
+### Rails Routing
 
 Open _config/routes.rb_ in your text editor.
 
@@ -33,7 +33,7 @@ Insert the following at line 2:
 
 Now point your browser to <http://localhost:3000>. 
 
-### 3. Controllers
+### Controllers
 
 Unbreak your app by creating a controller. 
 
@@ -49,7 +49,7 @@ At line 2, insert the following:
 
 and reload <http://localhost:3000>.
 
-### 4. Views
+### Views
 
 Time to get serious and add some HTML.
 
