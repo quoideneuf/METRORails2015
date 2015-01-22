@@ -99,7 +99,7 @@ In _app/models/impression.rb_, now add a timestamp to the line that creates the 
 
 	record = self.first || self.new(:hits => 0, :time => Time.now)
 	
-The test is still failing, but not for the same reason. The problem now is that Impression.second doesn't exist. We need to change the model so that it creates one record to represent each impression rather than one record to represent all impressions:
+The test is still failing, but not for the same reason. The problem now is that `Impression.second` doesn't exist. We need to change the model so that it creates one record to represent *each* impression rather than one record to represent *all* impressions:
 
 ```
   def self.hit
@@ -112,9 +112,9 @@ The test is still failing, but not for the same reason. The problem now is that 
   end
   ```
  
-Perhap the next logical step would be to add a statement to the home page that tells the user when the last hit was...or how often it receives a hit. 
+Perhaps the next logical step would be to add a statement to the home page that tells the user when the last hit was...or how often the app receives a hit. 
 
-You'll probably need to learn a bit about [Ruby's Time API](http://ruby-doc.org/core-2.1.5/Time.html) to do this. If you want to experiment, try using the rails console:
+Hint: You'll probably need to learn a bit about [Ruby's Time API](http://ruby-doc.org/core-2.1.5/Time.html) to do this. If you want to experiment, try using the rails console:
 
 	$ rails c
 	> Time.now.hour
